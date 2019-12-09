@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase_config:{
+    apiKey: "AIzaSyAovCLOZTvtVIbIxzYUxy83dqp6L2XFmmU",
+    authDomain: "portifolio-evandro.firebaseapp.com",
+    databaseURL: "https://portifolio-evandro.firebaseio.com",
+    projectId: "portifolio-evandro",
+    storageBucket: "portifolio-evandro.appspot.com",
+    messagingSenderId: "999830242365",
+    appId: "1:999830242365:web:bfd5e72d6d22651049d654"
+  }
 };
 
 /*
