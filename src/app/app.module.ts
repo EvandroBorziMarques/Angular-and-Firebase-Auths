@@ -11,9 +11,6 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 
 import { environment } from '../environments/environment';
-import { CoreModule } from './core/core.module';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { AuthGuard } from './core/auth.guard';
 import { PrimaryComponent } from './primary/primary.component';
 import { LogoutComponent } from './logout/logout.component';
 
@@ -23,7 +20,6 @@ import { LogoutComponent } from './logout/logout.component';
     AppComponent,
     ObjetivosComponent,
     HomeComponent,
-    UserProfileComponent,
     PrimaryComponent,
     LogoutComponent,
     
@@ -33,9 +29,7 @@ import { LogoutComponent } from './logout/logout.component';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase_config),
     AngularFireAuthModule,
-    CoreModule,
   ],
-  bootstrap: [AppComponent],
-  providers: [AuthGuard]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

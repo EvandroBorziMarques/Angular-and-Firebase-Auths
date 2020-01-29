@@ -2,8 +2,5 @@
     <tr> 
         <td><a routerLink="/home">Home</a></td>
         <td><a routerLink="/objetivos">Objetivos</a></td>
-        <td><div *ngIf="auth.user | async as user">
-            <button [routerLink]="['/']" routerLinkActive="router-link-active" (click)="auth.signOut()">Logout</button>
-        </div></td>
     </tr>  
 </table>
